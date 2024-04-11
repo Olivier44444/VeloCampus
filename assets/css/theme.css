@@ -2043,7 +2043,7 @@ progress {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 20%;
   }
   .col-lg-5 {
     -webkit-box-flex: 0;
@@ -10666,7 +10666,7 @@ textarea.form-control-lg {
 }
 
 .pt-6 {
-  padding-top: 4rem !important;
+  padding-top: 2rem !important;
 }
 
 .pt-7 {
@@ -21682,6 +21682,12 @@ h5, .h5 {
   z-index: 100;
 }
 
+.btn-code {
+  width: 100px !important;
+}
+
+
+
 
 
 .btn-gradient {
@@ -22945,7 +22951,7 @@ h5, .h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 24px 32px 24px 24px;
+  padding: 24px 32px 10px 24px;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
