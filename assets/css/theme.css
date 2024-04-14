@@ -1079,7 +1079,7 @@ progress {
 }
 @media (min-width: 1540px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1480px;
+    max-width: 1450px;
   }
 }
 :root {
@@ -1257,7 +1257,10 @@ progress {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   width: 100%;
+
 }
+
+
 
 .offset-1 {
   margin-left: 8.33333333%;
@@ -22792,7 +22795,7 @@ h5, .h5 {
 }
 
 .product-card {
-  border-radius: 22px;
+  border-radius: 10px;
   margin: 10px 0;
   height: 100%;
   border: 2px solid transparent;
@@ -22800,7 +22803,8 @@ h5, .h5 {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  border: 2px solid #E3A476;
+  /* border: 2px solid #E3A476; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .jour {
@@ -22816,22 +22820,18 @@ h5, .h5 {
 }
 
 .product-card .product-card-top {
-  min-height: 29rem;
   width: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: end;
+  aspect-ratio: 1/1; /* Définit un ratio de 1:1 (largeur:hauteur) */
 }
+
+
+
 .product-card .add-section {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -23224,4 +23224,211 @@ a:hover, a:focus {
 
 .search-button:hover {
     background-color: #f0f0f0; /* Changement de couleur au survol */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+	
+:root {
+	--c-theme-primary: rgb(254,207,131);
+	--c-theme-primary-accent: rgb(255,240,211);
+	--c-bg-primary: #D6DAE0;
+	--c-bg-secondary: #EAEBEC;
+	--c-bg-tertiary: #FDFDFD;
+	--c-text-primary: #1F1F25;
+	--c-text-secondary: #999FA6;
+}
+
+
+
+button {
+	font: inherit;
+	cursor: pointer;
+	&:focus {
+		outline: 0;
+	}
+}
+
+
+.datepicker {
+  font-family: "Inter", sans-serif;
+	width: 95%;
+	max-width: 350px;
+	background-color: var(--c-bg-tertiary);
+	border-radius: 10px;
+	box-shadow: 0 0 2px 0 rgba(#000, .2), 0 5px 10px 0 rgba(#000, .1);
+	padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin : auto;
+  margin-top: 60px;
+}
+
+.datepicker-top {
+	margin-bottom: 1rem;
+  
+}
+
+.datepicker-bottom {
+	margin-top: 1rem;
+  text-align: center;
+}
+
+.btn-group {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1rem;
+	margin-top: -.5rem;
+}
+
+.tag {
+	margin-right: .5rem;
+	margin-top: .5rem;
+	border: 0;
+	background-color: var(--c-bg-secondary);
+	border-radius: 10px;
+	padding: .5em .75em;
+	font-weight: 600;
+}
+
+.month-selector {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.arrow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 0;
+	background-color: #FFF;
+	border-radius: 12px;
+	width: 2.5rem;
+	height: 2.5rem;
+	box-shadow: 0 0 2px 0 rgba(#000,.25), 0 0 10px 0 rgba(#000, .15);
+  box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.month-name {
+	font-weight: 600;
+}
+
+.datepicker-calendar {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-row-gap: 1rem;
+}
+
+.day, .date {
+	justify-self: center;
+}
+
+.day {
+	color: var(--c-text-secondary);
+	font-size: .875em;
+	font-weight: 500;
+	justify-self: center;
+}
+
+.date {
+	border: 0;
+	padding: 0;
+	width: 2.25rem;
+	height: 2.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+	font-weight: 600;
+	border: 2px solid transparent;
+	background-color: transparent;
+	cursor: pointer;
+	&:focus {
+		outline: 0;
+		color: var(--c-theme-primary);
+		border: 2px solid var(--c-theme-primary-accent);	
+	}	
+}
+
+.faded {
+	color: var(--c-text-secondary);
+}
+
+.current-day {
+	color: #FFF;
+	border-color: var(--c-theme-primary);
+	background-color: var(--c-theme-primary);
+	&:focus {
+		background-color: var(--c-theme-primary-accent);
+	}
+}
+
+
+
+
+.taille {
+  width : 100%;
 }
