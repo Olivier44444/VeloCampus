@@ -24,6 +24,7 @@
     <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
     <script src="assets/js/config.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-...votre_clé_de_hachage..." crossorigin="anonymous" />
 
 
     <!-- ===============================================-->
@@ -48,9 +49,9 @@
     <main class="main" id="top">
       <div class="bg-white">
         <div class="content">
-          
           <nav class="navbar navbar-expand-lg py-1" id="navbar-top" data-navbar-soft-on-scroll="data-navbar-soft-on-scroll">
-            <div class="container"><a class="navbar-brand me-lg-auto cursor-pointer" href=""><img class="w-50 w-md-100 img-fluid" src="assets/img/logos/logo.png" alt="" /></a>
+            <div class="container">
+              <div class="nav-item"> <a class="nav-link nav-bar-item px-0 fs-1" href="#home" title="home">VéloCampus</a></div>
               <button class="navbar-toggler border-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent" data-navbar-collapse="data-navbar-collapse">
                 <div class="container d-lg-flex justify-content-lg-end pe-lg-0 w-lg-100">
@@ -61,48 +62,112 @@
                     <li class="nav-item"> <a class="nav-link nav-bar-item px-0" href="#products" title="catalog" >Contact</a></li>
                     <li class="nav-item"> <a class="nav-link nav-bar-item px-0" href="#products" title="catalog" style="white-space: nowrap;">Tableau de bord</a></li>
                   </ul>
-                  <button class="btn btn-inscription fs-8 mt-1 d-inline-flex "><span>Se connecter</span></button>  
-                  <button class="btn btn-inscription fs-8 mt-1 d-inline-flex"><span>S'inscrire</span></button>
+                  <button class="btn btn-inscription fs-8 my-1 d-inline-flex"><span>S'inscrire</span></button>
+                  <button class="btn btn-connexion fs-8 my-1 d-inline-flex "><span>Se connecter</span></button>  
+                  <button class="user-button"><i class='fas fa-user-circle'></i></button>
                 </div>
               </div>
             </div>
           </nav>
-          <div class="container container-inscription" data-bs-target="#navbar-top" data-bs-spy="scroll" tabindex="0">
+
+
+
+          <div class="container mt-5" data-bs-target="#navbar-top" data-bs-spy="scroll" tabindex="0">
             
-           
-            <section class="mb-9 mb-lg-10 mb-xxl-11 text-center text-lg-start mt-5" id="support">
-              <div class="row g-4 g-lg-6 g-xl-7 pt-6">
-                <div class="d-none d-lg-block col-lg-6 text-center"><img class="img-fluid" src="assets/img/illustrations/women_watering.png" /></div>
-                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center mt-0">
-                  <p class="fs-8 fs-md-7 fs-xxl-6 text-success fw-bold my-0 text-capitalize">Rejoignez la communauté</p>
-                  <h1 class="fs-5 fs-lg-4 fs-xl-3 text-secondary text-capitalize fw-light mt-3 mb-4">
-                  <span class="fw-bold">l'aventure</span> vous attend !</h1>
+            
+            <section class="mb-9 mb-lg-10 mb-xxl-11  text-center text-lg-start" id="about">
+              
+             
+                
+                
+
+                
+
+                
+                  <h4 class="mb-x1 fs-8 fs-md-7 fs-xxl-6 text-success fw-bold pt-6 text-capitalize">Historique des réservations</h4>
+                
+                  <div class="review-card">
+                    <div> 
+                      <h2 class="text-success fs-9 fs-md-8 fw-bold mb-x1 text-capitalize">5 Avril 2024</h2>
+                      <p class="text-black fs-10 fs-md-9 mb-0 mb-0">Vélo</p>
+                      <p class="text-black fs-10 fs-md-9 fs-xxl-8 mb-3 line-clamp-2">Commentaire</p>
+                    </div>
+                  </div>
+
+                  <div class="review-card">
+                    <div> 
+                      <h2 class="text-success fs-9 fs-md-8 fw-bold mb-x1 text-capitalize">27 mars 2024</h2>
+                      <p class="text-black fs-10 fs-md-9 mb-0 mb-0">Vélo</p>
+                      <p class="text-black fs-10 fs-md-9 fs-xxl-8 mb-3 line-clamp-2">Commentaire</p>
+                    </div>
+                  </div>
+
+                  <div class="review-card">
+                    <div> 
+                      <h2 class="text-success fs-9 fs-md-8 fw-bold mb-x1 text-capitalize">12 mars 2024</h2>
+                      <p class="text-black fs-10 fs-md-9 mb-0 mb-0">Vélo</p>
+                      <p class="text-black fs-10 fs-md-9 fs-xxl-8 mb-3 line-clamp-2">Commentaire</p>
+                    </div>
+                  </div>
                   
-                  <form method="POST" onsubmit="return false;">
-                    <p class="fs-8 text-capitalize">Identifiant</p>
-                    <div class="input-group position-relative">
-                      <input class="form-control email-input" type="email" name="email" placeholder="" />
-                    </div>
-                    <p class="fs-8 text-capitalize">Mot de passe</p>
-                    <div class="input-group position-relative">
-                      <input class="form-control email-input" type="email" name="email" placeholder="" />
-                    </div>
-                    <p class="fs-8 text-capitalize">Adresse mail</p>
-                    <div class="input-group position-relative">
-                      <input class="form-control email-input" type="email" name="email" placeholder="nom.prenom@imt-atlantique.net" />
-                    </div>
-                    <div class="form-check my-3">
-                      <input type="checkbox" class="form-check-input" id="Account-1" name="Accounts" value="Accounts">
-                      <p class="fs-8 text-capitalize">Caution</p>
-                    </div>
-                    <div class="d-flex justify-content-center mt-5">
-                      <button class="btn btn-gradient fs-8 d-inline-flex"><span>Valider</span></button>
-                    </div>
-                  </form>
+                 
                 </div>
-              </div>
-            </section>
-          </div>
+
+              
+
+
+
+
+              
+            </div>
+                
+                
+                  
+                    
+                  
+                
+              
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             
+
+
+
+
+
+
+
+
+
+
+
+            
           <button class="btn scroll-to-top" data-scroll-top="data-scroll-top"><span class="uil uil-angle-up text-white"></span></button>
           <footer class="Footer" style="background-image: url('assets/img/illustrations/BOTTOM.png')">
             <div class="pb-x1 px-3 px-lg-0">
@@ -144,7 +209,7 @@
                           <p class="fs-9 fs-md-8 fw-bold lh-nomal mb-0" style="color: #FFF0D3;"> Contact </p>
                         </div>
                         <div class="fs-10 fs-md-9">
-                          <p class="mb-0 text-white opacity-70"> un truc</p>
+                          <p class="mb-0 text-white opacity-70"> Obito Uchiha</p>
                           <p class="mb-0 text-white opacity-70"> Konoha, Leaf Village</p>
                         </div>
                       </div>

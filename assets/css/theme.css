@@ -21641,7 +21641,7 @@ h5, .h5 {
 }
 
 .btn-inscription {
-  border-radius: 40px;
+  border-radius: 10px;
   background-size: 100%;
   color: #fff;
   font-weight: 700;
@@ -21651,7 +21651,7 @@ h5, .h5 {
   align-items: center;
   gap: 21px;
   box-shadow: none !important;
-  border: 2px solid white; /* Ajoute une bordure blanche de 2px */
+  border: 2px solid #e8b087; /* Ajoute une bordure blanche de 2px */
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -21659,6 +21659,52 @@ h5, .h5 {
   margin-right: 10px; /* Ajoute une marge à droite du bouton */
   margin-left: auto;
   white-space: nowrap;
+  background-color: #e8b087;
+}
+
+.btn-inscription:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #d69260;
+  
+}
+
+
+.btn-inscription:focus-visible {
+  color: white;
+  background-color: #d69260;
+  border-color: #d69260;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
+.btn-connexion {
+  border-radius: 10px;
+  background-size: 100%;
+  color: #fff;
+  font-weight: 700;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+  box-shadow: none !important;
+  
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  z-index: 100;
+  margin-right: 10px; /* Ajoute une marge à droite du bouton */
+  margin-left: auto;
+  white-space: nowrap;
+  
+}
+
+.btn-connexion:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #d69260;
+  
 }
 
 .btn-jour {
@@ -21686,7 +21732,9 @@ h5, .h5 {
 }
 
 .btn-code {
-  width: 100px !important;
+  width: 100px !important;*
+  position: absolute; 
+  right: 20px;
 }
 
 
@@ -22828,6 +22876,7 @@ h5, .h5 {
   flex-direction: column;
   justify-content: end;
   aspect-ratio: 1/1; /* Définit un ratio de 1:1 (largeur:hauteur) */
+  position: relative;
 }
 
 
@@ -22951,7 +23000,7 @@ h5, .h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 24px 32px 10px 24px;
+  padding: 10px;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
@@ -23332,7 +23381,6 @@ button {
 
 .datepicker-bottom {
 	margin-top: 1rem;
-  text-align: center;
 }
 
 .btn-group {
@@ -23343,13 +23391,26 @@ button {
 }
 
 .tag {
-	margin-right: .5rem;
-	margin-top: .5rem;
 	border: 0;
 	background-color: var(--c-bg-secondary);
 	border-radius: 10px;
-	padding: .5em .75em;
+	padding: 5px 10px;
 	font-weight: 600;
+  display: inline-block; /* Pour qu'elles aient la longueur du texte */
+  margin: 0 5px; /* Ajouter un espacement entre les balises */
+  border-radius: 5px; /* Coins arrondis */
+}
+
+.number-tag {
+	border: 0;
+  color : white;
+	background-color: #008ffd;
+	border-radius: 10px;
+	padding: 5px 12px;
+	font-weight: 600;
+  display: inline-block; /* Pour qu'elles aient la longueur du texte */
+  margin: 0 5px; /* Ajouter un espacement entre les balises */
+  border-radius: 5px; /* Coins arrondis */
 }
 
 .month-selector {
@@ -23367,8 +23428,7 @@ button {
 	border-radius: 12px;
 	width: 2.5rem;
 	height: 2.5rem;
-	box-shadow: 0 0 2px 0 rgba(#000,.25), 0 0 10px 0 rgba(#000, .15);
-  box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
+	
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
@@ -23429,6 +23489,102 @@ button {
 
 
 
-.taille {
-  width : 100%;
+.user-button {
+  background-color: transparent; /* Supprime le fond gris */
+  border: none; /* Supprime le bord */
+  cursor: pointer; /* Curseur de type pointer au survol */
+  font-size: 30px;
+  color: #ffffff; /* Couleur du texte */
+}
+
+
+
+
+.availability-icon {
+  position: absolute;
+  bottom: 5px; /* Ajustez selon votre préférence */
+  right: 5px; /* Ajustez selon votre préférence */
+  background-color: #4CAF50; /* Couleur verte */
+  color: #ffffff; /* Couleur du texte blanc */
+  border-radius: 30px; /* Bords arrondis */
+  padding: 3px 10px; /* Espacement intérieur */
+  font-size: 12px; /* Taille de la police */
+}
+
+.unavailability-icon {
+  position: absolute;
+  bottom: 5px; /* Ajustez selon votre préférence */
+  right: 5px; /* Ajustez selon votre préférence */
+  background-color: #FF5733; /* Couleur verte */
+  color: #ffffff; /* Couleur du texte blanc */
+  border-radius: 30px; /* Bords arrondis */
+  padding: 3px 10px; /* Espacement intérieur */
+  font-size: 12px; /* Taille de la police */
+}
+
+
+
+/*Historique*/
+
+.H-card {
+  border-radius: 15px;
+  background: rgba(255, 217, 145, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: center;
+  margin-bottom: 29px;
+  gap: 24px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .H-card {
+    width : 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.H-tag {
+	border: 0;
+	
+	border-radius: 10px;
+	padding: 5px 10px;
+	font-weight: 600;
+  display: inline-block; /* Pour qu'elles aient la longueur du texte */
+  margin: 0 5px; /* Ajouter un espacement entre les balises */
+  border-radius: 5px; /* Coins arrondis */
+}
+
+.H-size-tag {
+	border: 0;
+  color : white;
+	background-color: #008ffd;
+	border-radius: 10px;
+	padding: 5px 12px;
+	font-weight: 600;
+  display: inline-block; /* Pour qu'elles aient la longueur du texte */
+  margin: 0 5px; /* Ajouter un espacement entre les balises */
+  border-radius: 5px; /* Coins arrondis */
+}
+
+
+.H-bike {
+  width: 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  aspect-ratio: 1/1; /* Définit un ratio de 1:1 (largeur:hauteur) */
+  position: relative;
+  border-radius: 10px;
+  
 }

@@ -24,6 +24,7 @@
     <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
     <script src="assets/js/config.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-...votre_clé_de_hachage..." crossorigin="anonymous" />
 
 
     <!-- ===============================================-->
@@ -48,14 +49,9 @@
     <main class="main" id="top">
       <div class="bg-white">
         <div class="content">
-          <div class="bg-white p-1 p-lg-2">
-            <div class="container">
-              <div class="d-flex justify-content-end align-items-center"><a class="ms-2 ms-md-3 submenu" href="#!"><span class="uil uil-bill"></span><span class="ms-1 fs-10 fs-sm-9">sale</span></a><a class="ms-2 ms-md-3 submenu" href="#!"><span class="uil uil-file-heart"></span><span class="ms-1 fs-10 fs-sm-9">wishlist</span></a><a class="ms-2 ms-md-3 submenu" href="#!"><span class="uil uil-shopping-cart"></span><span class="ms-1 fs-10 fs-sm-9">cart</span></a><a class="ms-2 ms-md-3 submenu" href="#!"><span class="uil uil-user-circle"></span><span class="ms-1 fs-10 fs-sm-9">log in/sign up</span></a>
-              </div>
-            </div>
-          </div>
           <nav class="navbar navbar-expand-lg py-1" id="navbar-top" data-navbar-soft-on-scroll="data-navbar-soft-on-scroll">
-            <div class="container"><a class="navbar-brand me-lg-auto cursor-pointer" href=""><img class="w-50 w-md-100 img-fluid" src="assets/img/logos/logo.png" alt="" /></a>
+            <div class="container">
+              <div class="nav-item"> <a class="nav-link nav-bar-item px-0 fs-1" href="#home" title="home">VéloCampus</a></div>
               <button class="navbar-toggler border-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent" data-navbar-collapse="data-navbar-collapse">
                 <div class="container d-lg-flex justify-content-lg-end pe-lg-0 w-lg-100">
@@ -66,8 +62,9 @@
                     <li class="nav-item"> <a class="nav-link nav-bar-item px-0" href="#products" title="catalog" >Contact</a></li>
                     <li class="nav-item"> <a class="nav-link nav-bar-item px-0" href="#products" title="catalog" style="white-space: nowrap;">Tableau de bord</a></li>
                   </ul>
-                  <button class="btn btn-inscription fs-8 mt-1 d-inline-flex "><span>Se connecter</span></button>  
-                  <button class="btn btn-inscription fs-8 mt-1 d-inline-flex"><span>S'inscrire</span></button>
+                  <button class="btn btn-inscription fs-8 my-1 d-inline-flex"><span>S'inscrire</span></button>
+                  <button class="btn btn-connexion fs-8 my-1 d-inline-flex "><span>Se connecter</span></button>  
+                  <button class="user-button"><i class='fas fa-user-circle'></i></button>
                 </div>
               </div>
             </div>
@@ -78,55 +75,60 @@
           <div class="container" data-bs-target="#navbar-top" data-bs-spy="scroll" tabindex="0">
             
             
-            <section class="mb-9 mb-lg-10 mb-xxl-11  text-center text-lg-start" id="about">
+            
               
               <h1 class="mt-5 fs-5 fs-lg-3 fs-xl-2 text-secondary text-capitalize fw-light mb-x1 text-lg-center">Tableau de bord</h1>
               <div class="row mb-7 mb-lg-8 mb-xl-9 gap-3">
                 
                 
 
-                <div class="col-12 col-lg">
+                
                   <h4 class="mb-x1 fs-8 fs-md-7 fs-xxl-6 text-success fw-bold pt-6 text-capitalize">Mes réservations</h4>
-                  <p class="text-black fs-10 fs-md-9 fs-xxl-8 lh-xl mb-0 line-clamp-5"> Aucune réservation en cours</p>
-                  <h4 class="mb-x1 fs-8 fs-md-8 fs-xxl-6 text-success fw-bold pt-6 text-capitalize">Récupérer mon vélo</h4> 
-                  <div class="mt-1 mb-1 text-center">
-                    <button class="btn btn-gradient btn-code fs-8 d-inline-flex"> <span>Code</span></button>
-                  </div>
-                </div>
+                  <!--<p class="text-black fs-10 fs-md-9 fs-xxl-8 lh-xl mb-0 line-clamp-5"> Aucune réservation en cours</p>-->
+                  
+                  
 
-                <div class="col-12 col-lg">
+                  <div class="H-card" style="position: relative;">
+                    <div class="H-bike" style="background-image: url('assets/img/products/products/exVelo.jpeg')"></div>
+                    <div class="H-size-tag">S</div>
+                    <div class="H-tag text-success fs-9 fs-md-8 fw-bold">2 avril 2024</div>
+                    <button class="btn btn-gradient btn-code fs-8 d-inline-flex"><span>Code</span></button>
+                </div>
+                
+                
+
+                
                   <h4 class="mb-x1 fs-8 fs-md-7 fs-xxl-6 text-success fw-bold pt-6 text-capitalize">Historique des réservations</h4>
                 
-                  <div class="review-card">
-                    <div> 
-                      <h2 class="text-success fs-9 fs-md-8 fw-bold mb-x1 text-capitalize">5 Avril 2024</h2>
-                      <p class="text-black fs-10 fs-md-9 mb-0 mb-0">Vélo</p>
-                      <p class="text-black fs-10 fs-md-9 fs-xxl-8 mb-3 line-clamp-2">Commentaire</p>
-                    </div>
+                  <div class="H-card">
+                    <div class="H-bike" style="background-image: url('assets/img/products/products/exVelo.jpeg')"></div>
+                    <div class="H-size-tag">S</div>
+                    <div class="H-tag text-success fs-9 fs-md-8 fw-bold">2 avril 2024</div>
+                    <div class="H-tag">Commentaire</div>
                   </div>
 
-                  <div class="review-card">
-                    <div> 
-                      <h2 class="text-success fs-9 fs-md-8 fw-bold mb-x1 text-capitalize">27 mars 2024</h2>
-                      <p class="text-black fs-10 fs-md-9 mb-0 mb-0">Vélo</p>
-                      <p class="text-black fs-10 fs-md-9 fs-xxl-8 mb-3 line-clamp-2">Commentaire</p>
-                    </div>
+                  <div class="H-card">
+                    <div class="H-bike" style="background-image: url('assets/img/products/products/exVelo.jpeg')"></div>
+                    <div class="H-size-tag">S</div>
+                    <div class="H-tag text-success fs-9 fs-md-8 fw-bold">27 mars 2024</div>
+                    <div class="H-tag">Commentaire</div>
+                  </div>
+                
+                  <div class="H-card">
+                    <div class="H-bike" style="background-image: url('assets/img/products/products/exVelo.jpeg')"></div>
+                    <div class="H-size-tag">S</div>
+                    <div class="H-tag text-success fs-9 fs-md-8 fw-bold">12 mars 2024</div>
+                    <div class="H-tag">Commentaire</div>
                   </div>
 
-                  <div class="review-card">
-                    <div> 
-                      <h2 class="text-success fs-9 fs-md-8 fw-bold mb-x1 text-capitalize">12 mars 2024</h2>
-                      <p class="text-black fs-10 fs-md-9 mb-0 mb-0">Vélo</p>
-                      <p class="text-black fs-10 fs-md-9 fs-xxl-8 mb-3 line-clamp-2">Commentaire</p>
-                    </div>
-                  </div>
+                  
                   
                   <div class="mt-3 mt-md-5 mt-lg-6 mb-1 text-center">
                     <button class="btn btn-gradient fs-8 d-inline-flex"> <span>Voir plus</span><span class="uil uil-arrow-right"></span></button>
                   </div>
-                </div>
+                
 
-              </div>
+            
 
               <h1 class="mt-5 fs-5 fs-lg-3 fs-xl-2 text-secondary text-capitalize fw-light mb-x1 text-lg-center">Réservation</h1>
 
@@ -153,7 +155,7 @@
                       <span class="day">Fr</span>
                       <span class="day">Sa</span>
                       <span class="day">Su</span>
-                      <button class="date faded">30</button>
+                      
                       <button class="date">1</date_button>
                       <button class="date">2</button>
                       <button class="date">3</button>
@@ -162,7 +164,7 @@
                       <button class="date">6</button>
                       <button class="date">7</button>
                       <button class="date">8</button>
-                      <button class="date current-day">9</button>
+                      <button class="date">9</button>
                       <button class="date">10</button>
                       <button class="date">11</button>
                       <button class="date">12</button>
@@ -170,7 +172,7 @@
                       <button class="date">14</button>
                       <button class="date">15</button>
                       <button class="date">16</button>
-                      <button class="date">17</button>
+                      <button class="date current-day">17</button>
                       <button class="date">18</button>
                       <button class="date">19</button>
                       <button class="date">20</button>
@@ -184,17 +186,19 @@
                       <button class="date">28</button>
                       <button class="date">29</button>
                       <button class="date">30</button>
-                      <button class="date">31</button>
+                      
                       <button class="date faded">1</button>
                       <button class="date faded">2</button>
                       <button class="date faded">3</button>
+                      <button class="date faded">4</button>
+                      <button class="date faded">5</button>
+                      
                     </div>
                     <div class="datepicker-bottom">
-                      <button class="tag">Suivant</button>
+                      <div class="tag">Vélo disponibles</div>
+                      <div class="number-tag">6</div>
                     </div>
                   </div>
-
-                  <h4 class="mb-x1 fs-8 fs-md-8 fs-xxl-6 text-success fw-bold pt-6 text-capitalize">4 vélos disponibles</h4>
 
                 </div>   
                     
@@ -223,16 +227,22 @@
                       
                       
                       <div class="product-card swiper-slide">
-                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')"></div>
+                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')">
+                            <div class="availability-icon">Disponible</div>
+                        </div>
                         <div class="d-flex flex-column px-x1 pt-3 product-card-body">
-                          <h3 class="text-success fw-semi-bold line-clamp-1  fs-md-11 ">Vélo n°1</h3>
-                          <p class="text-black fs-10 fs-md-9 mb-0 mb-0">Taille</p>
-                          <p class="text-black fs-10 fs-md-9 fs-xxl-8 mb-3 line-clamp-2">Etat</p>
+                            <h3 class="text-success fw-semi-bold line-clamp-1 fs-md-11 ">Vélo n°1</h3>
+                            <p class="text-black fs-10 fs-md-9 mb-0 mb-0">Taille</p>
+                            <p class="text-black fs-10 fs-md-9 fs-xxl-8 mb-3 line-clamp-2">Etat</p>
                         </div>
                       </div>
+                    
+                    
 
                       <div class="product-card swiper-slide">
-                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')"></div>
+                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')">
+                          <div class="availability-icon">Disponible</div>
+                        </div>
                         <div class="d-flex flex-column px-x1 pt-3 product-card-body">
                           <h3 class="text-success fw-semi-bold line-clamp-1  fs-md-11 ">Vélo n°2</h3>
                           <p class="text-black fs-10 fs-md-9 mb-0 mb-0">Taille</p>
@@ -241,7 +251,9 @@
                       </div>
 
                       <div class="product-card swiper-slide">
-                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')"></div>
+                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')">
+                          <div class="unavailability-icon">Indisponible</div>
+                        </div>
                         <div class="d-flex flex-column px-x1 pt-3 product-card-body">
                           <h3 class="text-success fw-semi-bold line-clamp-1  fs-md-11 ">Vélo n°3</h3>
                           <p class="text-black fs-10 fs-md-9 mb-0 mb-0">Taille</p>
@@ -250,7 +262,9 @@
                       </div>
 
                       <div class="product-card swiper-slide">
-                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')"></div>
+                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')">
+                          <div class="availability-icon">Disponible</div>
+                        </div>
                         <div class="d-flex flex-column px-x1 pt-3 product-card-body">
                           <h3 class="text-success fw-semi-bold line-clamp-1  fs-md-11 ">Vélo n°4</h3>
                           <p class="text-black fs-10 fs-md-9 mb-0 mb-0">Taille</p>
@@ -259,7 +273,9 @@
                       </div>
 
                       <div class="product-card swiper-slide">
-                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')"></div>
+                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')">
+                          <div class="availability-icon">Disponible</div>
+                        </div>
                         <div class="d-flex flex-column px-x1 pt-3 product-card-body">
                           <h3 class="text-success fw-semi-bold line-clamp-1  fs-md-11 ">Vélo n°5</h3>
                           <p class="text-black fs-10 fs-md-9 mb-0 mb-0">Taille</p>
@@ -268,7 +284,9 @@
                       </div>
 
                       <div class="product-card swiper-slide">
-                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')"></div>
+                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')">
+                          <div class="unavailability-icon">Indisponible</div>
+                        </div>
                         <div class="d-flex flex-column px-x1 pt-3 product-card-body">
                           <h3 class="text-success fw-semi-bold line-clamp-1  fs-md-11 ">Vélo n°6</h3>
                           <p class="text-black fs-10 fs-md-9 mb-0 mb-0">Taille</p>
@@ -277,7 +295,9 @@
                       </div>
 
                       <div class="product-card swiper-slide">
-                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')"></div>
+                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')">
+                          <div class="unavailability-icon">Indisponible</div>
+                        </div>
                         <div class="d-flex flex-column px-x1 pt-3 product-card-body">
                           <h3 class="text-success fw-semi-bold line-clamp-1  fs-md-11 ">Vélo n°7</h3>
                           <p class="text-black fs-10 fs-md-9 mb-0 mb-0">Taille</p>
@@ -286,7 +306,9 @@
                       </div>
 
                       <div class="product-card swiper-slide">
-                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')"></div>
+                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')">
+                          <div class="availability-icon">Disponible</div>
+                        </div>
                         <div class="d-flex flex-column px-x1 pt-3 product-card-body">
                           <h3 class="text-success fw-semi-bold line-clamp-1  fs-md-11 ">Vélo n°8</h3>
                           <p class="text-black fs-10 fs-md-9 mb-0 mb-0">Taille</p>
@@ -295,7 +317,9 @@
                       </div>
 
                       <div class="product-card swiper-slide">
-                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')"></div>
+                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')">
+                          <div class="unavailability-icon">Indisponible</div>
+                        </div>
                         <div class="d-flex flex-column px-x1 pt-3 product-card-body">
                           <h3 class="text-success fw-semi-bold line-clamp-1  fs-md-11 ">Vélo n°9</h3>
                           <p class="text-black fs-10 fs-md-9 mb-0 mb-0">Taille</p>
@@ -304,7 +328,9 @@
                       </div>
 
                       <div class="product-card swiper-slide">
-                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')"></div>
+                        <div class="product-card-top" style="background-image: url('assets/img/products/products/exVelo.jpeg')">
+                          <div class="availability-icon">Disponible</div>
+                        </div>
                         <div class="d-flex flex-column px-x1 pt-3 product-card-body">
                           <h3 class="text-success fw-semi-bold line-clamp-1  fs-md-11 ">Vélo n°10</h3>
                           <p class="text-black fs-10 fs-md-9 mb-0 mb-0">Taille</p>
@@ -328,7 +354,7 @@
 
             </div>
                 
-                
+          </div>    
                   
                     
                   
