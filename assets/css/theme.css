@@ -23597,28 +23597,61 @@ button {
 
 
 .availability-icon {
-  position: absolute;
-  bottom: 5px; /* Ajustez selon votre préférence */
-  right: 5px; /* Ajustez selon votre préférence */
-  background-color: #4CAF50; /* Couleur verte */
-  color: #ffffff; /* Couleur du texte blanc */
-  border-radius: 30px; /* Bords arrondis */
-  padding: 3px 10px; /* Espacement intérieur */
-  font-size: 12px; /* Taille de la police */
-}
-
-.unavailability-icon {
-  position: absolute;
+  position: absolute; 
   bottom: 5px; /* Ajustez selon votre préférence */
   right: 5px; /* Ajustez selon votre préférence */
   background-color: #FF5733; /* Couleur verte */
   color: #ffffff; /* Couleur du texte blanc */
-  border-radius: 30px; /* Bords arrondis */
+  border-radius: 5px; /* Bords arrondis */
   padding: 3px 10px; /* Espacement intérieur */
   font-size: 12px; /* Taille de la police */
+  display: inline-block; /* Pour que le bouton s'adapte à la taille du texte */
+  width: auto; /* Pour que la largeur soit déterminée par le contenu */
 }
 
 
+.button-container {
+  text-align: left; /* Pour centrer horizontalement les boutons */
+}
+
+
+
+.btn-admin-velo {
+  position: relative;
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 3px 10px;
+  font-size: 12px;
+  display: inline-block;
+  width: fit-content; /* Ajuster la largeur au contenu */
+
+}
+
+.background-bleu1 {
+  background-color : transparent;
+  color : #c1121f;
+  border : 1px solid #c1121f;
+}
+
+.background-bleu2 {
+  background-color : #9381ff;
+}
+
+.background-orange {
+  background-color: #f18805;
+}
+
+.background-rouge {
+  background-color: #c1121f;
+}
+
+.background-rouge2 {
+  background-color: #FF5733;
+}
+
+.background-vert {
+  background-color: #4CAF50;
+}
 
 /*Historique*/
 
