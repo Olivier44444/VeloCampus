@@ -23630,7 +23630,7 @@ button {
 .background-bleu1 {
   background-color : transparent;
   color : #c1121f;
-  border : 1px solid #c1121f;
+  border : 1px solid #c1121f !important;
 }
 
 .background-bleu2 {
