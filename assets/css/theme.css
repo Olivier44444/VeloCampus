@@ -22706,11 +22706,20 @@ h5, .h5 {
   width: 100%;
   z-index: 1120;
 }
+
+@media (max-width: 768px) {
+  .navbar .navbar-collapse {
+    top : 45px;
+    padding-bottom: 0.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .navbar .navbar-collapse {
     top: 85px;
   }
 }
+
 @media (min-width: 992px) {
   .navbar .navbar-collapse {
     background-color: transparent !important;
@@ -22747,8 +22756,8 @@ h5, .h5 {
   font-weight: 500;
 }
 .nav-bar-item:hover {
-  color: #124838 !important;
-  font-weight: bold;
+  color: white !important;
+  
 }
 .nav-bar-item::before {
   display: block;
@@ -23600,7 +23609,18 @@ button {
   position: absolute; 
   bottom: 5px; /* Ajustez selon votre préférence */
   right: 5px; /* Ajustez selon votre préférence */
-  background-color: #FF5733; /* Couleur verte */
+  color: #ffffff; /* Couleur du texte blanc */
+  border-radius: 5px; /* Bords arrondis */
+  padding: 3px 10px; /* Espacement intérieur */
+  font-size: 12px; /* Taille de la police */
+  display: inline-block; /* Pour que le bouton s'adapte à la taille du texte */
+  width: auto; /* Pour que la largeur soit déterminée par le contenu */
+}
+
+.admin-icon {
+  
+  
+  background-color: #008ffd; /* Couleur verte */
   color: #ffffff; /* Couleur du texte blanc */
   border-radius: 5px; /* Bords arrondis */
   padding: 3px 10px; /* Espacement intérieur */
@@ -23627,10 +23647,16 @@ button {
 
 }
 
-.background-bleu1 {
+.background-Supprimer {
   background-color : transparent;
   color : #c1121f;
   border : 1px solid #c1121f !important;
+}
+
+.background-Upgrade {
+  background-color : transparent;
+  color : #008ffd;
+  border : 1px solid #008ffd !important;
 }
 
 .background-bleu2 {
@@ -23852,21 +23878,7 @@ button {
   margin-bottom: 0
 }
 
-@media (max-width: 991px) {
-  .project .right-col {
-      margin-top: 20px;
-      margin-left: 65px
-  }
-  .project .project-progress {
-      width: 150px
-  }
-}
 
-@media (max-width: 480px) {
-  .project .project-progress {
-      display: none
-  }
-}
 .has-shadow {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -23952,4 +23964,145 @@ button {
 select {
   font-size: 0.9rem;
   padding: 2px 5px;
+}
+
+
+@media (max-width: 767px) {
+  .flex-media.d-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .admin-container > .d-flex {
+    flex-direction: column;
+    align-items: flex-start; /* Aligner les éléments à gauche */
+    justify-content: center; /* Centrer verticalement les boutons */
+    margin-top: 20px; /* Ajouter de l'espace en haut */
+
+  }
+
+  .admin-container > .d-flex button {
+    margin-bottom: 10px; /* Ajouter de l'espace entre les boutons */
+  }
+}
+
+
+.gestion-admin {
+  width : 50%;
+  padding: 15px;
+
+}
+
+
+#primary{
+  position:absolute;
+  top:0;
+  margin:auto;
+  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100%;
+  li{
+    margin:0 20px;
+    position:relative;
+    a{
+      text-decoration:none;
+      display:block;
+      padding:5px 0;
+      font-family:'Open Sans';
+      font-size:26px;
+      line-height:1;
+      font-weight:bold;
+      position:relative;
+      z-index:1;
+      text-align: center;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(
+          to right,
+          $main-color,
+          $main-color 50%,
+          #fff 50%);
+      background-size: 200% 100%;
+      background-position: -100%;
+      transition: all 0.3s ease-in-out;
+      &:before{
+        display:block;
+        content:'';
+        width:0;
+        height:3px;
+        bottom:5px;
+        left:0;
+        bottom:-3px;
+        z-index:0;
+        position:absolute;
+        background:$main-color;
+        transition: all 0.3s ease-in-out;
+      }
+      &:hover{
+        background-position: 0%;
+        &:before{
+          width:100%;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-select select {
+  display: none;
+}
+
+.custom-select .selected-option {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.custom-select .selected-option:hover {
+  background-color: #f9f9f9;
+}
+
+.custom-select .options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+}
+
+.custom-select .option {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.custom-select .option:hover {
+  background-color: #f0f0f0;
 }
